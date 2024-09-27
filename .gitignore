@@ -1,6 +1,6 @@
 .idea/
 *.pyc
-*.pth
+#*.pth
 dataset/
 test_results/
 results/
