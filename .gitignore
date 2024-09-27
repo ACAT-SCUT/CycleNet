@@ -1,0 +1,8 @@
+.idea/
+*.pyc
+*.pth
+dataset/
+test_results/
+results/
+logs/
+.DS_Store
