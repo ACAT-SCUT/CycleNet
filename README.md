@@ -22,7 +22,7 @@ The RCF technique comprises two steps: the first step involves modeling the peri
 
 ![image](Figures/Figure3.png)
 
-The learnable recurrent cycles _**Q**_ are initialized to ***zeros*** and then undergo gradient backpropagation training along with the backbone module for prediction, yielding *learned representations* (different from the initial zeros) that uncover the cyclic patterns embedded within the sequence. Here, we have provided the code implementation [visualization.ipynb] to visualize the learned periodic patterns.
+The learnable recurrent cycles _**Q**_ are initialized to ***zeros*** and then undergo gradient backpropagation training along with the backbone module for prediction, yielding *learned representations* (different from the initial zeros) that uncover the cyclic patterns embedded within the sequence. Here, we have provided the code implementation [[visualization.ipynb](https://github.com/ACAT-SCUT/CycleNet/blob/main/visualization.ipynb)] to visualize the learned periodic patterns.
 
 ![image](Figures/Figure4.png)
 
@@ -108,7 +108,7 @@ You can easily reproduce the results from the paper by running the provided scri
 sh run_main.sh
 ```
 
-**For your convenience**, we have provided the execution results of "sh run_main.sh" in [**result.txt**], which contain the results of running CycleNet/Linear and CycleNet/MLP five times each with various input lengths {96, 336, 720} and random seeds {2024, 2025, 2026, 2027, 2028}.
+**For your convenience**, we have provided the execution results of "sh run_main.sh" in [**[result.txt](https://github.com/ACAT-SCUT/CycleNet/blob/main/result.txt)**], which contain the results of running CycleNet/Linear and CycleNet/MLP five times each with various input lengths {96, 336, 720} and random seeds {2024, 2025, 2026, 2027, 2028}.
 
 You can also run the following command to reproduce the results of various STD techniques as well as the performance on the PEMS datasets (the PEMS datasets can be obtained from [SCINet](https://github.com/cure-lab/SCINet)):
 
