@@ -1,9 +1,9 @@
 # CycleNet
 
-Welcome to the official repository of the CycleNet paper: "CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns (_the paper on arXiv will be available soon_)"
+Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479v1)"
 
 ## Updates
-🚩 **News** (2024.09) CycleNet has been accepted as **NeurIPS 2024 Spotlight** (_average rating 7.25_).
+🚩 **News** (2024.09) CycleNet has been accepted as **NeurIPS 2024 _Spotlight_** (_average rating 7.25_).
 
 CycleNet is the powerful successor to **[SparseTSF](https://github.com/lss-1138/SparseTSF)** (another work of ours, **ICML 2024 Oral**). Both models emphasize the importance of **periodicity** in time series data for long-term forecasting. The key difference include:
 
