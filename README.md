@@ -1,11 +1,11 @@
 # CycleNet
 
-Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479v1)"
+Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479v1)". [[中文解读]](https://zhuanlan.zhihu.com/p/984766136)
 
 ## Updates
 🚩 **News** (2024.09) CycleNet has been accepted as **NeurIPS 2024 _Spotlight_** (_average rating 7.25_).
 
-CycleNet is the powerful successor to **[SparseTSF](https://github.com/lss-1138/SparseTSF)** (another work of ours, **ICML 2024 Oral**). Both models emphasize the importance of **periodicity** in time series data for long-term forecasting. The key difference include:
+CycleNet is the powerful successor to **[SparseTSF](https://github.com/lss-1138/SparseTSF)** (another work of ours, **ICML 2024 _Oral_**). Both models emphasize the importance of **periodicity** in time series data for long-term forecasting. The key difference include:
 
 | **Model**      | **Use of Periodicity**                         | **Technique**                        | **Effect**                        | **Performance**                 | **Efficiency**                     | **Other Strengths**                               |
 |----------------|------------------------------------------------|--------------------------------------|-----------------------------------|---------------------------------|------------------------------------|--------------------------------------------------|
@@ -130,10 +130,10 @@ sh scripts/CycleNet/Linear-Input-96/etth1.sh
 ## Citation
 If you find this repo useful, please cite our paper.
 ```
-@inproceedings{cyclenet,
+@article{lin2024cyclenet,
   title={CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns},
   author={Lin, Shengsheng and Lin, Weiwei and Hu, Xinyi and Wu, Wentai and Mo, Ruichao and Zhong, Haocheng},
-  booktitle={Thirty-eighth Conference on Neural Information Processing Systems},
+  journal={arXiv preprint arXiv:2409.18479},
   year={2024}
 }
 ```
