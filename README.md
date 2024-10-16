@@ -1,6 +1,6 @@
 # CycleNet
 
-Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479v1)". [[中文解读]](https://zhuanlan.zhihu.com/p/984766136)
+Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479)". [[中文解读]](https://zhuanlan.zhihu.com/p/984766136)
 
 ## Updates
 🚩 **News** (2024.09) CycleNet has been accepted as **NeurIPS 2024 _Spotlight_** (_average rating 7.25_).
