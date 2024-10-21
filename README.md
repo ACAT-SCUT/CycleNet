@@ -3,7 +3,7 @@
 Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479)". [[中文解读]](https://zhuanlan.zhihu.com/p/984766136)
 
 ## Updates
-🚩 **News** (2024.10): Thanks to the contribution of wayhoww, CycleNet has been updated with a new implementation for generating cyclic components, achieving a 2x to 3x acceleration.
+🚩 **News** (2024.10): Thanks to the contribution of [wayhoww](https://github.com/wayhoww), CycleNet has been updated with a [new implementation](https://github.com/ACAT-SCUT/CycleNet/blob/f1deb5e1329970bf0c97b8fa593bb02c6d894587/models/CycleNet.py#L17) for generating cyclic components, achieving a 2x to 3x acceleration.
 
 🚩 **News** (2024.09) CycleNet has been accepted as **NeurIPS 2024 _Spotlight_** (_average rating 7.25_).
 
