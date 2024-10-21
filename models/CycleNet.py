@@ -9,21 +9,8 @@ class RecurrentCycle(torch.nn.Module):
         self.data = torch.nn.Parameter(torch.zeros(cycle_len, channel_size), requires_grad=True)
 
     def forward(self, index, length):
-        # roll the queue tensor to the appropriate index
-        rolled_data = torch.stack([torch.roll(self.data, shifts=(-i.item(), 0), dims=(0, 1)) for i in index])
-
-        outputs = []
-        for i in range(rolled_data.size(0)):
-            if length <= self.cycle_len:
-                output = rolled_data[i, :length]
-            else:
-                # repeat the queue data to match the required length
-                num_repeats = length // self.cycle_len
-                remainder = length % self.cycle_len
-                output = torch.cat([rolled_data[i]] * num_repeats + [rolled_data[i, :remainder]])
-            outputs.append(output)
-
-        return torch.stack(outputs)
+        gather_index = (index.view(-1, 1) + torch.arange(length, device=index.device).view(1, -1)) % self.cycle_len    
+        return self.data[gather_index]
 
 
 class Model(nn.Module):
