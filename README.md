@@ -1,6 +1,10 @@
 # CycleNet
 
-Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479)". [[中文解读]](https://zhuanlan.zhihu.com/p/984766136)
+Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns](https://arxiv.org/pdf/2409.18479)". 
+
+[[Poster|海报]](https://drive.google.com/file/d/1dBnmrjtTab4M5L9qfrdAp2Y_xr53hBZ1/view?usp=drive_link) -
+[[Slides|幻灯片]](https://drive.google.com/file/d/1QcCCxRFtnFYPtaXmZiF4Zby5r-nl5tR5/view?usp=drive_link) - 
+[[中文解读]](https://zhuanlan.zhihu.com/p/984766136)
 
 ## Updates
 🚩 **News** (2024.10): Thanks to the contribution of [wayhoww](https://github.com/wayhoww), CycleNet has been updated with a [new implementation](https://github.com/ACAT-SCUT/CycleNet/blob/f1deb5e1329970bf0c97b8fa593bb02c6d894587/models/CycleNet.py#L17) for generating cyclic components, achieving a 2x to 3x acceleration.
@@ -16,7 +20,7 @@ CycleNet is the powerful successor to **[SparseTSF](https://github.com/lss-1138/
 
 ## Introduction
 
-CycleNet pioneers the explicit modeling of periodicity to enhance model performance in long-term time series forecasting (LTSF) tasks. Specifically, we introduce the Residual Cycle Forecasting (RCF) technique, which uses **learnable recurrent cycles** to capture inherent periodic patterns in sequences and then makes predictions on the *residual components* of the modeled cycles. 
+CycleNet pioneers the **explicit modeling of periodicity** to enhance model performance in long-term time series forecasting (LTSF) tasks. Specifically, we introduce the Residual Cycle Forecasting (RCF) technique, which uses **learnable recurrent cycles** to capture inherent periodic patterns in sequences and then makes predictions on the *residual components* of the modeled cycles. 
 
 ![image](Figures/Figure2.png)
 
