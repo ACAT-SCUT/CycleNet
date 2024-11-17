@@ -136,10 +136,10 @@ sh scripts/CycleNet/Linear-Input-96/etth1.sh
 ## Citation
 If you find this repo useful, please cite our paper.
 ```
-@article{lin2024cyclenet,
+@inproceedings{cyclenet,
   title={CycleNet: Enhancing Time Series Forecasting through Modeling Periodic Patterns},
   author={Lin, Shengsheng and Lin, Weiwei and Hu, Xinyi and Wu, Wentai and Mo, Ruichao and Zhong, Haocheng},
-  journal={arXiv preprint arXiv:2409.18479},
+  booktitle={Thirty-eighth Conference on Neural Information Processing Systems},
   year={2024}
 }
 ```
