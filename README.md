@@ -102,7 +102,7 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
-All the datasets needed for CycleNet can be obtained from the [Google Drive](https://drive.google.com/drive/folders/1ZOYpTUa82_jCcxIdTmyr0LXQfvaM9vIy) provided in Autoformer. 
+All the datasets needed for CycleNet can be obtained from the [[Google Drive]](https://drive.google.com/file/d/1bNbw1y8VYp-8pkRTqbjoW-TA-G8T0EQf/view) that introduced in previous works such as Autoformer and SCINet. 
 Create a separate folder named ```./dataset``` and place all the CSV files in this directory. 
 **Note**: Place the CSV files directly into this directory, such as "./dataset/ETTh1.csv"
 
