@@ -77,7 +77,7 @@ parser.add_argument('--factor', type=int, default=1, help='attn factor')
 parser.add_argument('--distil', action='store_false',
                     help='whether to use distilling in encoder, using this argument means not using distilling',
                     default=True)
-parser.add_argument('--dropout', type=float, default=0.5, help='dropout')
+parser.add_argument('--dropout', type=float, default=0, help='dropout')
 parser.add_argument('--embed', type=str, default='timeF',
                     help='time features encoding, options:[timeF, fixed, learned]')
 parser.add_argument('--activation', type=str, default='gelu', help='activation')
