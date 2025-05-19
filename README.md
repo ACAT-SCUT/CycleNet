@@ -7,18 +7,20 @@ Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing 
 [[中文解读]](https://zhuanlan.zhihu.com/p/984766136)
 
 ## Updates
-🚩 **News** (2025.05): Our latest work, **TQNet**, has been accepted to **ICML 2025**. TQNet is a powerful successor to CycleNet, addressing its limitation in *modeling inter-variable correlations* effectively. The paper and code will be released soon.
+🚩 **News** (2025.05): Our latest work, [**TQNet**](https://github.com/ACAT-SCUT/TQNet), has been accepted to **ICML 2025**. TQNet is a powerful successor to CycleNet, addressing its limitation in *modeling inter-variable correlations* effectively.
 
 🚩 **News** (2024.10): Thanks to the contribution of [wayhoww](https://github.com/wayhoww), CycleNet has been updated with a [new implementation](https://github.com/ACAT-SCUT/CycleNet/blob/f1deb5e1329970bf0c97b8fa593bb02c6d894587/models/CycleNet.py#L17) for generating cyclic components, achieving a 2x to 3x acceleration.
 
 🚩 **News** (2024.09) CycleNet has been accepted as **NeurIPS 2024 _Spotlight_** (_average rating 7.25_).
 
-CycleNet is the powerful successor to **[SparseTSF](https://github.com/lss-1138/SparseTSF)** (another work of ours, **ICML 2024 _Oral_**). Both models emphasize the importance of **periodicity** in time series data for long-term forecasting. The key difference include:
+**Please note that** [**SparseTSF**](https://github.com/lss-1138/SparseTSF), [**CycleNet**](https://github.com/ACAT-SCUT/CycleNet), and [**TQNet**](https://github.com/ACAT-SCUT/TQNet) represent our continued exploration of **leveraging periodicity** for long-term time series forecasting (LTSF). 
+The differences and connections among them are as follows:
 
-| **Model**      | **Use of Periodicity**                         | **Technique**                        | **Effect**                        | **Performance**                 | **Efficiency**                     | **Other Strengths**                               |
-|----------------|------------------------------------------------|--------------------------------------|-----------------------------------|---------------------------------|------------------------------------|--------------------------------------------------|
-| **[SparseTSF](https://github.com/lss-1138/SparseTSF)** | **Indirectly** utilizes via downsampling       | Cross-Period Sparse Forecasting      | Extreme lightweight design        | Near SOTA                       | Ultra-lightweight, < 1k parameters | Strong generalization                              |
-| **CycleNet**   | **Explicitly** models via learnable parameters | Residual Cycle Forecasting (RCF)     | Better utilization of periodicity | SOTA with Linear/MLP | Lightweight, 100k ~ 1M parameters  | High interpretability, novel periodicity analysis |
+|                            Model                             |        Use of Periodicity         |            Technique             |                   Effect                   |      Efficiency      |                   Strengths                   |                      Limitation                       |
+| :----------------------------------------------------------: | :-------------------------------: | :------------------------------: | :----------------------------------------: | :------------------: | :-------------------------------------------: | :---------------------------------------------------: |
+| [**SparseTSF**](https://github.com/lss-1138/SparseTSF)  <br> **(ICML 2024 Oral**) |    Indirectly via downsampling    | Cross-Period Sparse Forecasting  |             Ultra-light design             |   < 1k parameters    |       Extremely lightweight, near SOTA        | Fails to cover multi-periods **(solved by CycleNet)** |
+| [**CycleNet**](https://github.com/ACAT-SCUT/CycleNet) <br> **(NeurIPS 2024 Spotlight)** | Explicit via learnable parameters | Residual Cycle Forecasting (RCF) |         Better use of periodicity          | 100k ~ 1M parameters |      Strong performance on periodic data      | Fails in multivariate modeling **(solved by TQNet)**  |
+|                  [**TQNet**](https://github.com/ACAT-SCUT/TQNet) <br> **(ICML 2025)**                   |    Serve as global correlations     |   Temporal Query in attention mechanism  | Robust inter-variable correlation modeling |    ~1M parameters    | Enhanced multivariate forecasting performance |     Hard to scale to ultra-long look-back inputs      |
 
 ## Introduction
 
