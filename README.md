@@ -11,7 +11,7 @@ Welcome to the official repository of the CycleNet paper: "[CycleNet: Enhancing 
 
 🚩 **News** (2024.10): Thanks to the contribution of [wayhoww](https://github.com/wayhoww), CycleNet has been updated with a [new implementation](https://github.com/ACAT-SCUT/CycleNet/blob/f1deb5e1329970bf0c97b8fa593bb02c6d894587/models/CycleNet.py#L17) for generating cyclic components, achieving a 2x to 3x acceleration.
 
-🚩 **News** (2024.09) CycleNet has been accepted as **NeurIPS 2024 _Spotlight_** (_average rating 7.25_).
+🚩 **News** (2024.09): CycleNet has been accepted as **NeurIPS 2024 _Spotlight_** (_average rating 7.25_, Top 1%).
 
 **Please note that** [**SparseTSF**](https://github.com/lss-1138/SparseTSF), [**CycleNet**](https://github.com/ACAT-SCUT/CycleNet), and [**TQNet**](https://github.com/ACAT-SCUT/TQNet) represent our continued exploration of **leveraging periodicity** for long-term time series forecasting (LTSF). 
 The differences and connections among them are as follows:
